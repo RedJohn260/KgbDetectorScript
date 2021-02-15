@@ -1,0 +1,63 @@
+{
+    "output_file": "Settings/kgb_settings.json",
+    "SecretKeywords": {
+      "type": "textbox",
+      "value": "kgb,stallin,red,sickle,cccp,ussr",
+      "label": "Agent secret keywords",
+      "tooltip": "Detect user name based on this keywords (comma separated).",
+      "group": "Core"
+    },
+    "DetectKgbCommand": {
+      "type": "textbox",
+      "value": "!kgb",
+      "label": "KGB Command",
+      "tooltip": "Command for detecting KGB agents.",
+      "group": "Core"
+    },
+    "Message1": {
+      "type": "textbox",
+      "value": "Logging in KGB agent: ",
+      "label": "KGB Message",
+      "tooltip": "Message1",
+      "group": "Core"
+    },
+    "Message2": {
+      "type": "textbox",
+      "value": " logged in... Welcome Comrade.",
+      "label": "KGB Message",
+      "tooltip": "Message2",
+      "group": "Core"
+    },
+    "Message3": {
+      "type": "textbox",
+      "value": " Your next assingment: ",
+      "label": "KGB Message",
+      "tooltip": "Message3",
+      "group": "Core"
+    },
+    "Permission": {
+      "type": "dropdown",
+      "value": "everyone",
+      "items": ["everyone","moderator","subscriber","user_specific","editor"],
+      "label": "Permission",
+      "tooltip": "Who is able to use the command",
+      "group": "Core"
+    },
+    "Info": {
+        "type": "textbox",
+        "value": "",
+        "label": "Info",
+        "tooltip": "This field should only be filled when using the user_specific permission.",
+        "group": "Core"
+      },
+    "Cooldown": {
+      "type": "slider",
+      "value": 4,
+      "min": 1,
+      "max": 100,
+      "ticks": 1,
+      "label": "Cooldown (seconds)",
+      "tooltip": "How long the command should go on cooldown for",
+      "group": "Core"
+    }
+  }
